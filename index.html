@@ -20,7 +20,7 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
       margin-bottom: 10px;
     }
 
@@ -34,11 +34,16 @@
       font-size: 1.5rem;
       margin-top: 10px;
     }
+    #message2 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
   <div id="content">
     <h1 id="title">Countdown to Mathanggi's Birthday 🎂</h1>
+     <div id="message2"></div>
     <div id="countdown"></div>
     <div id="message"></div>
   </div>
@@ -91,7 +96,11 @@
           `Your age is ${getAge()}`;
 
         document.getElementById("title").innerText =
-          "Countdown to Mathanggi's Birthday 🎂";
+          "Counting Down to Something Special for you!";
+
+         document.getElementById("message2").innerHTML =
+          `Get ready for a wonderful surprise mathanggi! ${getAge()}`;
+
       }
     }
 
